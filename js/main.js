@@ -1,6 +1,5 @@
-
 let monto = parseInt(prompt("Ingrese el monto incial (ARS): "))
-let plazo = parseInt(prompt(" Plazo en dias:\n 30 - 60 - 90\n 120 - 140- 170\n 200 - 220 - 240\n 270 - 300 - 330 - 360"))
+let plazo = parseInt(prompt(" Plazo en dias:\n 30 a 360"))
 const tna = monto * 0.097
 
 function interesSimple(monto, tna, plazo) {
@@ -11,7 +10,7 @@ let seguir = prompt("Monto: "+ monto + "$" + "\n" + "Plazo: "+ plazo + " " + "Di
 
 while (seguir == "no") {
     let monto = parseInt(prompt("Ingrese el monto incial (ARS): "))
-    let plazo = parseInt(prompt(" Plazo en dias:\n 30 - 60 - 90\n 120 - 140- 170\n 200 - 220 - 240\n 270 - 300 - 330 - 360"))
+    let plazo = parseInt(prompt(" Plazo en dias:\n 30 a 360"))
     const tna = monto * 0.097
 
     function interesSimple(monto, tna, plazo) {
@@ -32,4 +31,3 @@ switch (seguir) {
         alert ("Neto a cobrar: \n" + (monto + interesSimple(monto, tna, plazo)).toFixed(2))
         break;
 }
-
