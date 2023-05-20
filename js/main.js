@@ -19,15 +19,12 @@ while (seguir == "no") {
 
     let seguir = prompt("Monto: "+ monto + "$" + "\n" + "Plazo: "+ plazo + " " + "Dias" + "\n" + "Intereses: "+ interesSimple(monto, tna, plazo).toFixed(2) + "$" + "\n" + "TNA: " + "97% \n" + "\n" + "Desea continuar (SI/NO):").toLowerCase()
 
-    switch (seguir) {
-        case "si":
+    if (seguir == "si") {
             alert ("Neto a cobrar: \n" + (monto + interesSimple(monto, tna, plazo)).toFixed(2))
             break;
     }
 }
 
-switch (seguir) {
-    case "si":
-        alert ("Neto a cobrar: \n" + (monto + interesSimple(monto, tna, plazo)).toFixed(2))
-        break;
+if (seguir == "si") {
+    alert ("Neto a cobrar: \n" + (monto + interesSimple(monto, tna, plazo)).toFixed(2))
 }
